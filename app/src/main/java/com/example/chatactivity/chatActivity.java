@@ -151,7 +151,7 @@ public class chatActivity extends AppCompatActivity {
         if(item.getItemId()==R.id.logout)
         {
             FirebaseAuth.getInstance().signOut();
-            startActivity(new Intent(chatActivity.this,SigninActivity.class));
+            startActivity(new Intent(chatActivity.this,MainActivity.class));
             finish();
             return true;
         }
