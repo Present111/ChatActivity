@@ -3,8 +3,13 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="Primary">#128c7e</color>
-    <color name="PrimaryDark">#075e54</color>
     <color name="PrimaryAnccent">#25d355</color>
     <color name="PrimaryVarient">#ece5dd</color>
 
+
+
+    <color name="btn_color">#99555453</color>
+    <color name="bg_color">#100F0F</color>
+    <color name="primary_color">#F6D253</color>
+    <color name="transparent_color">#00000000</color>
 </resources>

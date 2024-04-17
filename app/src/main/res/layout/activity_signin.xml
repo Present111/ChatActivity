@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/PrimaryVarient"
+    android:background="@color/bg_color"
     tools:context=".SigninActivity">
 
     <ImageView
@@ -25,6 +25,7 @@
         android:layout_marginVertical="5dp"
         android:inputType="textEmailAddress"
         android:background="@drawable/edit_style_box"
+        android:textColor="@color/white"
         android:padding="15dp"/>
 
 
@@ -37,6 +38,7 @@
         android:layout_marginVertical="5dp"
         android:inputType="textPassword"
         android:background="@drawable/edit_style_box"
+        android:textColor="@color/white"
         android:padding="15dp"/>
 
     <TextView
@@ -49,7 +51,7 @@
         android:gravity="center"
         android:padding="5dp"
         android:background="@drawable/button_background"
-        android:textColor="@color/white"
+        android:textColor="@color/bg_color"
         android:layout_marginVertical="10dp"/>
 
     <TextView
@@ -58,6 +60,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/login"
         android:text="New User... Sign up"
+        android:textColor="@color/white"
         android:textSize="24sp"
         android:gravity="center"
         android:padding="5dp"

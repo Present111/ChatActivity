@@ -6,14 +6,48 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".chatActivity"
-    android:background="#ece5dd">
+    android:background="@color/bg_color">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="@color/PrimaryDark"
-        app:titleTextColor="@color/white"/>
+        android:layout_height="wrap_content"
+        android:background="@color/bg_color"
+        android:padding="10dp"
+        android:id="@+id/toolbar">
+
+        <include layout="@layout/profile_pic_view"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@+id/logout"
+            android:id="@+id/profile_pic_layout"
+            />
+
+        <ImageButton
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_arrow_left"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:tint="@color/white"
+            android:layout_centerVertical="true"
+            android:id="@+id/logout"/>
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/profile_pic_layout"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:text="User name" />
+
+    </RelativeLayout>
+
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/chatrecycler"
@@ -43,8 +77,8 @@
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_alignParentRight="true"
-            android:padding="15dp"
-            android:src="@drawable/send"/>
+            android:padding="10dp"
+            android:src="@drawable/ic_round_arrow_up"/>
 
 
     </RelativeLayout>

@@ -6,15 +6,40 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/PrimaryVarient"
+    android:background="@color/bg_color"
     tools:context=".MainActivity">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="?android:attr/actionBarSize"
-        android:background="@color/PrimaryDark"
-        android:titleTextColor="@color/white"/>
+        android:layout_height="wrap_content"
+        android:background="@color/bg_color"
+        android:padding="10dp"
+        android:id="@+id/toolbar">
+
+        <ImageButton
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_arrow_left"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:tint="@color/white"
+            android:layout_centerVertical="true"
+            android:id="@+id/logout"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="20dp"
+
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="160dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:text="Tin nhắn" />
+
+    </RelativeLayout>
     
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler"
